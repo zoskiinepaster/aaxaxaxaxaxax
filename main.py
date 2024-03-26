@@ -5,6 +5,8 @@ import string
 from PIL import Image, ImageDraw, ImageFont
 import os
 import json
+from keep_alive import keep_alive
+keep_alive()
 
 intents = discord.Intents.default()
 intents.messages = True
