@@ -4,18 +4,12 @@ import random
 import string
 from PIL import Image, ImageDraw, ImageFont
 import os
-import youtube_dl
-import youtube_search
-from youtube_search import YoutubeSearch
 import json
 
 intents = discord.Intents.default()
 intents.messages = True
 intents.guilds = True
 intents.members = True
-
-# Хостинг бота
-
 
 bot = commands.Bot(command_prefix='!', intents=intents)
 my_secret = os.environ['TOKEN']
